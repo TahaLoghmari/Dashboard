@@ -11,14 +11,22 @@
 body {
   font-family: sans-serif, "Roboto";
   font-size: 18px;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
 .container {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 8fr;
 }
 .sidebar p,
 .sidebar svg {
   color: white;
+  font-weight: bold;
 }
 .sidebar {
   grid-row: 1 / 2;
@@ -32,14 +40,27 @@ body {
   padding-right: var(--pdr);
   padding-top: var(--pdt);
 }
-.navigation {
-  background-color: blue;
+.SearchBar input {
+  width: 80%;
+  height: 25px;
+  background-color: #e2e8f0;
+  border: 0px solid;
+  border-radius: 12px;
 }
-.mainContent {
-  background-color: blueviolet;
+.SearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
 }
-.SideContent {
-  background-color: chocolate;
+.notifications-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.notifications-profile p {
+  font-weight: bold;
 }
 .UserNavigation,
 .Configuration {
@@ -59,4 +80,133 @@ svg {
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
+}
+.Header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  padding-bottom: 35px;
+  padding-top: var(--pdt);
+  padding-left: var(--pdl);
+  border-bottom: 2px solid rgba(204, 209, 216, 255);
+}
+.Welcome {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.WelcomeMessage > p:nth-child(2) {
+  font-weight: bold;
+  font-size: 22px;
+}
+.WelcomeMessage > p:nth-child(1) {
+  font-size: 16px;
+}
+img {
+  width: 40px;
+  height: auto;
+  border-radius: 60%;
+}
+.addContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 25px;
+}
+button {
+  color: white;
+  background-color: #1992d4;
+  border: 0px solid;
+  border-radius: 16px;
+  padding: 10px;
+  width: 90px;
+  font-weight: bold;
+}
+.AllContent {
+  padding-left: var(--pdl);
+  padding-right: var(--pdr);
+  background-color: white;
+  background-color: #e2e8f0;
+  padding-top: var(--pdt);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 20px;
+}
+.SideContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.SideContent .Content {
+  background-color: white;
+  border-radius: 8px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mainContent > p {
+  font-weight: bold;
+}
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 2fr);
+  gap: 20px;
+}
+.Card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 8px solid #f0b429;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  height: 265px;
+}
+.text > p:nth-child(1),
+.SideContent > p {
+  font-weight: bold;
+}
+.text > p:nth-child(2),
+.Ann-card p:nth-child(2) {
+  color: #858585;
+  font-size: 16px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.Ann-card p:nth-child(1) {
+  font-weight: bold;
+}
+.Ann-card {
+  padding-bottom: var(--pdt);
+  margin-top: 15px;
+}
+.Trending {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Tren-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
