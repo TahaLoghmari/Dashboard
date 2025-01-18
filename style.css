@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --pdl: 20px;
+  --pdr: 60px;
+  --pdt: 20px;
+}
+body {
+  font-family: sans-serif, "Roboto";
+  font-size: 18px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+.sidebar p,
+.sidebar svg {
+  color: white;
+}
+.sidebar {
+  grid-row: 1 / 2;
+  background-color: #1992d4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+  padding-left: var(--pdl);
+  padding-right: var(--pdr);
+  padding-top: var(--pdt);
+}
+.navigation {
+  background-color: blue;
+}
+.mainContent {
+  background-color: blueviolet;
+}
+.SideContent {
+  background-color: chocolate;
+}
+.UserNavigation,
+.Configuration {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+svg {
+  width: 30px;
+  height: auto;
+}
+.Logo {
+  font-size: 26px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
